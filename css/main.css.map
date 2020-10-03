@@ -8,7 +8,7 @@
         "../sass/_nav.scss",
         "../sass/_index.scss",
         "../sass/_about.scss",
-        "../sass/_media.scss",
+        "../sass/media.scss",
         "../sass/_faq.scss",
         "../sass/_contact.scss",
         "../sass/_sponsers2.scss",

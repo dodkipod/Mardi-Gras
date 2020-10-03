@@ -1,11 +1,12 @@
 body {
-  background-image: url(../_images/bg.jpg);
+  background-image: url(../images/bg.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 .container {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto',
+ sans-serif;
   background-color: #F2CC0F;
   padding: 0;
 }
@@ -15,7 +16,8 @@ main {
 }
 
 li a {
-  font-family: 'Henny Penny', cursive;
+  font-family: 'Henny Penny',
+ cursive;
   font-size: 1.5em;
   color: #9453A6;
 }
@@ -23,7 +25,8 @@ li a {
 h1,
 h2,
 h5 {
-  font-family: 'Pattaya', sans-serif;
+  font-family: 'Pattaya',
+ sans-serif;
   color: #9453A6;
 }
 
