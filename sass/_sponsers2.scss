@@ -1,0 +1,58 @@
+.sponsers {
+  display: grid;
+  grid-template-rows: 20%, 80%;
+  grid-template-columns: repeat(2, 1fr);
+  height: 22em;
+  text-align: center;
+  grid-column-gap: 0.5em;
+  background-color: $green;
+  border: 2px solid $purple;
+  border-radius: 20px;
+  padding: 1em;
+}
+
+.sponser1head,
+.sponser2head {
+
+  grid-row: 1/2;
+}
+
+.sponser1img,
+.sponser2img {
+
+  grid-row: 2/3;
+  overflow: hidden;
+
+  border: 2px solid $yellow;
+
+}
+
+.sponser1img {
+  grid-column: 1/2;
+}
+
+.sponser2img {
+  grid-column: 2/3;
+}
+
+@include tablet {
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .sponsers {
+
+    height: 15em;
+  }
+}
+
+@include mobile {
+  h2 {
+    font-size: 1em;
+  }
+
+  .sponsers {
+    padding: 0.3em;
+    height: 8em;
+  }
+}

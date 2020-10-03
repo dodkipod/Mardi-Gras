@@ -1,0 +1,12 @@
+.accordion {
+  z-index: 1;
+}
+
+.faqQ {
+  color: $purple;
+
+  &:hover {
+    text-decoration: none;
+
+  }
+}

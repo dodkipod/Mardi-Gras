@@ -1,0 +1,50 @@
+$purple:#9453A6;
+$green:#8CBF3F;
+$yellow: #F2CC0F;
+
+body {
+  background-image: url(../_images/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+.container {
+  font-family: 'Roboto',
+    sans-serif;
+  background-color: $yellow;
+  padding: 0;
+}
+
+main {
+  padding: 1.2em;
+}
+
+li a {
+
+  font-family: 'Henny Penny',
+    cursive;
+  font-size: 1.5em;
+  color: $purple;
+}
+
+h1,
+h2,
+h5 {
+  font-family: 'Pattaya',
+    sans-serif;
+  color: $purple;
+
+}
+
+
+
+.logo:hover {
+  width: 21%;
+
+}
+
+button {
+  border-radius: 12px;
+  background-color: $green;
+}

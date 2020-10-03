@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="_images/favicon2.png">
+
+  <title>Contact | Mardi Gras New Orleans</title>
+  <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <header><img class="img-fluid" src="_images/header.jpg" alt="Header Image">
+      <a href="index.html"><img class="logo img-fluid" src="_images/logo.png" alt="Mardi Gras Logo"></a></header>
+    <nav>
+
+      <div class="burger">☰</div>
+      <ul>
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div id="contactForm">
+
+        <form>
+          <div>
+            <label for="fname">Name:<em>*</em></label>
+            <br>
+            <input type="text" id="fname">
+            <span id="error1"></span>
+          </div>
+          <div>
+            <label for="lname">Last name:<em>*</em></label>
+            <br>
+            <input type="text" id="lname">
+            <span id="error2"></span>
+          </div>
+          <div>
+            <label for="email">Email:<em>*</em></label>
+            <br>
+            <input type="text" id="email">
+            <span id="error3"></span>
+          </div>
+          <div>
+            <label for="msg">Message:<em>*</em></label>
+            <br>
+            <textarea name="" id="msg"></textarea>
+            <br>
+            <span id="error4"></span>
+          </div>
+          <div>
+            <br><br>
+            <input type="submit" value="Submit" id="submit">
+          </div>
+
+        </form>
+      </div>
+
+      <br><br>
+
+      <div class="sponsers">
+        <div class="sponser1head">
+          <a href="http://www.museumofdeath.net/" target="blank">
+            <h2>Museum of Death</h2>
+          </a>
+        </div>
+        <div class="sponser1img">
+          <a href="http://www.museumofdeath.net/" target="blank">
+            <img class="img-fluid" src="_images/museumOfDeath.jpeg" alt="Museum of Death"></a>
+        </div>
+        <div class="sponser2head">
+          <a href="https://www.bloodymarystours.com/" target="blank">
+            <h2>Haunted Museum</h2>
+          </a>
+        </div>
+        <div class="sponser2img">
+          <a href="https://www.bloodymarystours.com/" target="blank"><img class="img-fluid"
+              src="_images/haunted.jpg_400" alt="Haunted Museum"></a>
+        </div>
+      </div>
+    </main>
+    <br><br>
+    <footer>
+
+      <a href="https://www.facebook.com/MardiGrasNewOrleans" target="blank"> <i
+          class="fab fa-facebook-square face"></i></a>
+      <a href="https://twitter.com/MardiGrasNOLA" target="blank"><i class="fab fa-twitter-square twit"></i></a>
+      <a href="https://www.instagram.com/mardigrasneworleans/" target="blank"> <i
+          class="fab fa-instagram-square inst"></i></a>
+
+      <p>Created by AdAmsFaKeWeBsItEs ©</p>
+    </footer>
+
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script>
+    function placeMaker() {
+      if (window.screen.width < 800) {
+
+
+        let formv = document.getElementById("contactForm");
+
+
+        formv.innerHTML = `
+        <form>
+          
+        <div>
+          <label for="fname">Name:<em>*</em></label>
+          <br>
+          <input type="text" id="fname" placeholder="Enter First name">
+          <span id="error1"></span>
+        </div>
+        <div>
+          <label for="lname">Last name:<em>*</em></label>
+          <br>
+          <input type="text" id="lname" placeholder="Enter Last name">
+          <span id="error2"></span>
+        </div>
+        <div>
+          <label for="email">Email:<em>*</em></label>
+          <br>
+          <input type="text" id="email" placeholder="Enter email">
+          <span id="error3"></span>
+        </div>
+        <div>
+          <label for="msg">Message:<em>*</em></label>
+          <br>
+          <textarea name="" id="msg" placeholder="Enter your message here"></textarea>
+          <br>
+          <span id="error4"></span>
+        </div>
+        <div>
+          <br><br>
+          <input type="submit" value="Submit" id="submit">
+        </div>
+        </form>`;
+
+
+      } else {
+        let formv = document.getElementById("contactForm");
+        formv.innerHTML = `
+        <form>
+          
+        <div>
+          <label for="fname">Name:<em>*</em></label>
+          <br>
+          <input type="text" id="fname" >
+          <span id="error1"></span>
+        </div>
+        <div>
+          <label for="lname">Last name:<em>*</em></label>
+          <br>
+          <input type="text" id="lname" >
+          <span id="error2"></span>
+        </div>
+        <div>
+          <label for="email">Email:<em>*</em></label>
+          <br>
+          <input type="text" id="email" >
+          <span id="error3"></span>
+        </div>
+        <div>
+          <label for="msg">Message:<em>*</em></label>
+          <br>
+          <textarea name="" id="msg" ></textarea>
+          <br>
+          <span id="error4"></span>
+        </div>
+        <div>
+          <br><br>
+          <input type="submit" value="Submit" id="submit">
+        </div>
+        </form>`;
+      }
+    }
+
+    window.addEventListener('resize', placeMaker)
+    placeMaker()
+
+    document.getElementById("submit").addEventListener('click', function (e) {
+      let counter = 0;
+
+      e.preventDefault()
+      let fnameu = document.getElementById("fname");
+      let lnameu = document.getElementById("lname");
+      let emailu = document.getElementById("email");
+      let msgu = document.getElementById("msg");
+      let err1 = document.getElementById("error1");
+      let err2 = document.getElementById("error2");
+      let err3 = document.getElementById("error3");
+      let err4 = document.getElementById("error4");
+
+      if (fnameu.value == "") {
+        err1.innerHTML = "Please enter your first name";
+        err1.style.color = 'red';
+        fnameu.focus();
+      } else {
+        counter++
+      }
+
+      if (lnameu.value == "") {
+        err2.innerHTML = "Please enter your last name";
+        err2.style.color = 'red';
+        lnameu.focus();
+      } else {
+        counter++
+      }
+
+      if (emailu.value == "" || emailu.value.indexOf("@") == -1 || emailu.value.indexOf(".") == -1) {
+
+        err3.innerHTML = "Enter email please";
+        err3.style.color = 'red';
+        emailu.focus();
+      } else {
+        counter++
+      }
+
+      if (msgu.value == "") {
+        err4.innerHTML = "Please let us know what this is about";
+        err4.style.color = 'red';
+        msgu.focus();
+      } else {
+        counter++
+      }
+
+      if (counter >= 4) {
+        document.getElementById("contactForm").innerHTML = `<div id="afterSubmit"><h1>Thank you for your message!</h1>
+        <h3>Our team will contact you within 48 hours</h3>
+        </div>`;
+      }
+    });
+  </script>
+</body>
+
+</html>

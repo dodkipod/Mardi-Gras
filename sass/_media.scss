@@ -1,0 +1,33 @@
+.lightboxcontainer {
+  width: 100%;
+  text-align: center;
+}
+
+.vids {
+  display: flex;
+}
+
+iframe {
+  margin: 0.3em;
+  width: 100%;
+}
+
+img[title=small] {
+
+  width: 16.5em;
+  height: 9em;
+  margin: 0.1em;
+
+}
+
+@include tablet {
+  .vids {
+    flex-direction: column;
+  }
+
+  iframe {
+    margin: 1em auto;
+
+    width: 90%;
+  }
+}

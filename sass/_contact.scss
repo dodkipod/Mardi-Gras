@@ -1,0 +1,44 @@
+input {
+  width: 20em;
+}
+
+em {
+  color: rgb(250, 66, 10);
+}
+
+textarea {
+  width: 40em;
+  height: 20em;
+  resize: none;
+}
+
+#afterSubmit {
+  text-align: center;
+}
+
+
+
+
+@include tablet {
+  textarea {
+    width: 20em;
+  }
+
+  label {
+    display: none;
+  }
+
+}
+
+
+
+@include mobile {
+  textarea {
+    width: 20em;
+  }
+
+  label {
+    display: none;
+  }
+
+}
